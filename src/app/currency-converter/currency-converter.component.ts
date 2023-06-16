@@ -56,10 +56,12 @@ export class CurrencyConverterComponent implements OnInit {
 
     if (this.fromCurrency === this.toCurrency) {
       convertedValue = inputValue;
-    } else if (this.fromCurrency === 'UAH') {
-      convertedValue = inputValue / this.rates[this.toCurrency];
     } else if (this.toCurrency === 'UAH') {
-      convertedValue = inputValue * this.rates[this.fromCurrency];
+      // Зміна умови тут
+      convertedValue = inputValue / this.rates[this.fromCurrency];
+    } else if (this.fromCurrency === 'UAH') {
+      // Зміна умови тут
+      convertedValue = inputValue * this.rates[this.toCurrency];
     } else {
       convertedValue =
         (inputValue * this.rates[this.toCurrency]) /
@@ -68,6 +70,4 @@ export class CurrencyConverterComponent implements OnInit {
 
     this.amount = parseFloat(convertedValue.toFixed(2));
   }
-  
 }
-
