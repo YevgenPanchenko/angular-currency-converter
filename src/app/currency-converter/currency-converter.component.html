@@ -1,0 +1,55 @@
+<div class="container pt-6 pb-6">
+  <div class="row justify-content-center ">
+    <div class="col-6 ">
+      <div class="card p-3 borderDiv">
+        <h1 class="h2 mb-4">Currency Converter</h1>
+
+        <div class="courses">
+          <div class="course-item card card-body">
+            <div class="course-item-title">USD</div>
+            <div class="course-item-value">{{ rates.USD | number: '1.2-2' }}</div>
+          </div>
+          <div class="course-item card card-body">
+            <div class="course-item-title">EUR</div>
+            <div class="course-item-value">{{ rates.EUR | number: '1.2-2' }}</div>
+          </div>
+          <div class="course-item card card-body">
+            <div class="course-item-title">GBP</div>
+            <div class="course-item-value">{{ rates.GBP | number: '1.2-2' }}</div>
+          </div>
+        </div>
+
+        <div class="row mb-1">
+          <div class="col">
+            <label for="input">I Give:</label>
+            <select class="form-control" [(ngModel)]="fromCurrency">
+              <option value="UAH">UAH</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="GBP">GBP</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="result">I Take:</label>
+            <select  class="form-control" [(ngModel)]="toCurrency">
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="GBP">GBP</option>
+              <option value="UAH">UAH</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <input type="number" class="form-control" [(ngModel)]="amount" (input)="convertValue()" autofocus min="0"/>
+          </div>
+          <div class="col">
+            <input type="number" class="form-control" [(ngModel)]="convertedAmount" (input)="convertBack()" min="0"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
