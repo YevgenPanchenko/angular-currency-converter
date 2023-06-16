@@ -5,8 +5,7 @@ You can convert between such currencies as: USD, GBP, UAH, EUR.
 ## How to use
 Please select 2 currency pairs for conversion from the list. Next, you must add the amount of the currency you ned for being converted.
 Please add the amount below the entry "I Give:" and you will take the result of the conversion below the entry that "I Take:"!
-Also, you can change the amount of currency under the inscription "I Take:".
-If you don't use arrow keys to change the amount of currency you must hit enter key on your keyboard!
+If you don't use arrow keys to change the amount of currency you must press "enter" key on your keyboard after the entering amount of currency!
 ***
 Please clone or download this repo to your computer.
 Run `npm install` to add all dependencies and download modules.
