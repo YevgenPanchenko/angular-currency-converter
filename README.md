@@ -1,11 +1,17 @@
 # Converter
+This is a Desktop version of currency convertor that is using API from N.B.U. (bank.gov.ua)!
+You can convert between such currencies as: USD, GBP, UAH, EUR.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
+## How to use
+Please select 2 currency pairs for conversion from the list. Next, you must add the amount of the currency you ned for being converted.
+Please add the amount below the entry "I Give:" and you will take the result of the conversion below the entry that "I Take:"!
+If you don't use arrow keys to change the amount of currency you must press "enter" key on your keyboard after the entering amount of currency!
+***
+Please clone or download this repo to your computer.
+Run `npm install` to add all dependencies and download modules.
+Then simply run Development server with `ng serve` command. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+***
+## Some commands that you may need:
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
